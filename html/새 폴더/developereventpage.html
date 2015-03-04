@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <script src="../../js/masonry.js"></script>
+  <script src="../../js/imagesloaded.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+  <title>Developer Event Page</title>
+  <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar-wrapper">
+    <div class="">
+      <div class="navbar navbar-inverse navbar-static-top">
+        <div class="">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="../../asset/GDG-SSU-Logo3-white.png" height=29>
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+              <li class="dropdown">
+                <a href="#developer_event" class="dropdown-toggle" data-toggle="dropdown">Developer Event <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#event">Google I/O extended</a></li>
+                  <li><a href="#another_event">Another Event</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Done Done</li>
+                  <li><a href="#done">Well Done</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="container">
+<!--     <div class="col-md-2 column margintop10">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">F party</a></li>
+        <li><a href="#">Google I/O Extended</a></li>
+        <li><a href="#">Gaegang Party</a></li>
+        <li><a href="#">BANANAAA!</a></li>
+        <li><a href="#">Sireo Sireo</a></li>
+        <li><a href="#">JJang Sirum</a></li>
+      </ul>
+    </div>
+ -->
+    <div class="item">
+      <img src="../../asset/watch.jpg" class="img-responsive">
+    </div>
+    <div class="item">
+      <img src="../../asset/asdf.png" class="img-responsive">
+    </div>
+    <div class="item">
+      <img src="../../asset/die.jpg" class="img-responsive">
+    </div>
+    <div class="item w2">
+      <img src="../../asset/sample.jpg" class="img-responsive">
+    </div>
+    <div class="item">
+      <img src="../../asset/sample2.jpg" class="img-responsive">
+    </div>
+    <div class="item">
+      <img src="../../asset/cat.jpg" class="img-responsive">
+    </div>
+
+  </div>
+
+
+  <script>
+  var container = document.querySelector('#container');
+  imagesLoaded(container, function() {
+    var msnry = new Masonry( container, {
+      gutter: 0,
+      itemSelector: '.item'
+    });
+  });
+  </script>
+</body>
